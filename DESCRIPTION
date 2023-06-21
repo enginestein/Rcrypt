@@ -1,0 +1,36 @@
+Package: rcrypt
+Type: Package
+Title: An R Wrapper for the CryptoCompare API
+Version: 0.0.0.9000
+Authors@R: person("Arya", "Praneil Pritesh", email = "aryapraneil@gmail.com", 
+    role = c("aut", "cre"))
+Description: A cryptocompare API rapper for R
+    found at <https://www.cryptocompare.com/api>.
+License: GPL-v3 + FILE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/enginestein/Rcrypt
+BugReports: https://github.com/enginestein/Rcrypt/issues
+RoxygenNote: 6.0.1
+Imports: 
+    dplyr (>= 0.7.4.9000),
+    glue (>= 1.2.0),
+    httr (>= 1.3.1),
+    janitor (>= 0.4.0.9000),
+    jsonlite (>= 1.5),
+    lubridate (>= 1.7.1),
+    magrittr (>= 1.5),
+    purrr (>= 0.2.4),
+    readr (>= 1.1.1),
+    tibble (>= 1.4.1),
+    tidyr (>= 0.7.2)
+Depends:
+    R (>= 3.4.3)
+Suggests: 
+    knitr (>= 1.20),
+    rmarkdown (>= 1.8),
+    testthat (>= 2.0.0),
+    covr (>= 3.0.1)
+VignetteBuilder: knitr
+Remotes: sfirke/janitor,
+    tidyverse/dplyr
