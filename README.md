@@ -80,8 +80,8 @@ get_price_details(c("BTC", "ETH"), "USD")
 #> # A tibble: 2 x 29
 #>    type market fromsymbol tosymbol flags  price lastupdate         
 #>   <int> <chr>  <chr>      <chr>    <int>  <dbl> <dttm>             
-#> 1     5 CCCAGG BTC        USD          2 10439. 2018-03-01 04:24:46
-#> 2     5 CCCAGG ETH        USD          4   861. 2018-03-01 04:24:49
+#> 1     5 CCCAGG BTC        USD          2 10439. 2023-03-01 04:24:46
+#> 2     5 CCCAGG ETH        USD          4   861. 2023-03-01 04:24:49
 #> # ... with 22 more variables: lastvolume <dbl>, lastvolumeto <dbl>,
 #> #   lasttradeid <int>, volumeday <dbl>, volumedayto <dbl>,
 #> #   volume24hour <dbl>, volume24hourto <dbl>, openday <dbl>,
@@ -104,12 +104,12 @@ head(btc_price_history)
 #> # A tibble: 6 x 7
 #>   time                close  high   low  open volumefrom  volumeto
 #>   <dttm>              <dbl> <dbl> <dbl> <dbl>      <dbl>     <dbl>
-#> 1 2018-01-30 00:00:00  144.  169. 136.   167.    450127. 67979718.
-#> 2 2018-01-31 00:00:00  146.  147. 131.   144.    266456. 37414174.
-#> 3 2018-02-01 00:00:00  126.  147. 114.   146.    368930. 47844293.
-#> 4 2018-02-02 00:00:00  122.  132.  94.0  126.    700073. 79912243.
-#> 5 2018-02-03 00:00:00  124.  130. 107.   122.    247394. 29901510.
-#> 6 2018-02-04 00:00:00  107.  125.  99.4  124.    304361. 33951028.
+#> 1 2023-01-30 00:00:00  144.  169. 136.   167.    450127. 67979718.
+#> 2 2023-01-31 00:00:00  146.  147. 131.   144.    266456. 37414174.
+#> 3 2023-02-01 00:00:00  126.  147. 114.   146.    368930. 47844293.
+#> 4 2023-02-02 00:00:00  122.  132.  94.0  126.    700073. 79912243.
+#> 5 2023-02-03 00:00:00  124.  130. 107.   122.    247394. 29901510.
+#> 6 2023-02-04 00:00:00  107.  125.  99.4  124.    304361. 33951028.
 ```
 
 ### Snapshot Data
@@ -154,7 +154,7 @@ get_pair_snapshot("BTC", "ETH")
 #> # A tibble: 1 x 21
 #>    type market fromsymbol tosymbol flags price lastupdate         
 #>   <int> <chr>  <chr>      <chr>    <int> <dbl> <dttm>             
-#> 1     5 CCCAGG BTC        ETH          4  12.5 2018-03-01 03:54:49
+#> 1     5 CCCAGG BTC        ETH          4  12.5 2023-03-01 03:54:49
 #> # ... with 14 more variables: lastvolume <dbl>, lastvolumeto <dbl>,
 #> #   lasttradeid <dbl>, volumeday <dbl>, volumedayto <dbl>,
 #> #   volume24hour <dbl>, volume24hourto <dbl>, openday <int>,
@@ -165,8 +165,8 @@ get_pair_snapshot("BTC", "ETH")
 #> # A tibble: 2 x 15
 #>    type market        fromsymbol tosymbol flags price lastupdate         
 #>   <int> <chr>         <chr>      <chr>    <int> <dbl> <dttm>             
-#> 1     2 Bleutrade     BTC        ETH          1  12.5 2018-03-01 03:54:49
-#> 2     2 LocalBitcoins BTC        ETH          1  12.4 2018-03-01 01:17:41
+#> 1     2 Bleutrade     BTC        ETH          1  12.5 2023-03-01 03:54:49
+#> 2     2 LocalBitcoins BTC        ETH          1  12.4 2023-03-01 01:17:41
 #> # ... with 8 more variables: lastvolume <dbl>, lastvolumeto <dbl>,
 #> #   lasttradeid <dbl>, volume24hour <dbl>, volume24hourto <dbl>,
 #> #   open24hour <dbl>, high24hour <dbl>, low24hour <dbl>
@@ -239,7 +239,7 @@ str(eth_social_stats)
 #>   ..$ size               : int [1:4] 1174 17220 3003 85755
 #>   ..$ closed_total_issues: int [1:4] 139 1294 11528 987
 #>   ..$ stars              : int [1:4] 761 2089 2420 28498
-#>   ..$ last_update        : POSIXct[1:4], format: "2018-02-27 14:56:00" ...
+#>   ..$ last_update        : POSIXct[1:4], format: "2023-02-27 14:56:00" ...
 #>   ..$ forks              : int [1:4] 267 1372 786 16892
 #>   ..$ url                : chr [1:4] "https://github.com/petertodd/python-bitcoinlib" "https://github.com/bitcoinj/bitcoinj" "https://github.com/bitcoinjs/bitcoinjs-lib" "https://github.com/bitcoin/bitcoin"
 #>   ..$ closed_issues      : int [1:4] 46 621 3154 404
