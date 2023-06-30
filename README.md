@@ -8,16 +8,16 @@ You can install `rcrypt` from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("enginestein/cryptor")
+devtools::install_github("enginestein/Rcrypt")
 ```
 
 Usage
 -----
 
-This package comes with several functions that map directly to CryptoCompare [API endpoints](https://min-api.cryptocompare.com). These functions center on price and other coin details for various cryptorcurrencies. CryptoCompare integrates with several exchanges and the exchange to be queried can often be requested. However, the default exchange of CCCAGG often works the best. The following outlines common use cases for various functions.
+This package comes with several functions that map directly to CryptoCompare [API endpoints](https://min-api.cryptocompare.com). These functions center on price and other coin details for various Rcryptcurrencies. CryptoCompare integrates with several exchanges and the exchange to be queried can often be requested. However, the default exchange of CCCAGG often works the best. The following outlines common use cases for various functions.
 
 ``` r
-library(cryptor)
+library(Rcrypt)
 ```
 
 ### Available Exchanges
